@@ -1,0 +1,80 @@
+# SUSE Manager at CSPs
+A quick decision and overview guide for SUMa at CSPs
+
+## Types of SUMa offerings at CSPs
+* Both SUMa PAYG and SUMa BYOS are available from the Marketplaces
+
+### SUMa PAYG
+
+* When to use it?
+** *Always, if you run in clouds*
+
+* Where to get it?
+** directly from the Amazon or Azure Marketplace. Unfortunately there is no offering for Google today.
+
+* Why are there 2 listings and which one should I use?
+** We have 2 listings for SUSE Manager, "EU and UK only / EMEA Orders Only" and "non-EU and non-UK only", you should pick the listing that reflects in which country *your AWS & Azure account gets billed*
+
+*** You may need to be logged in into the CSP portal in order to let the CSP system know your country of billing.
+
+* Do i need subscriptions?
+** No, its all automatic - no hassle with subscriptions
+
+* Who does the support?
+** As it is a SUSE offering - SUSE will provide L1-L3 support
+
+* How do i get support?
+** The offer has a link to https://scc.suse.com/cloudsupport, where you need to upload your supportconfig to open a ticket.
+
+* I have SLES4SAP PAYG instances in the cloud, will i be billed for them?
+** No, SUMa is aware of the embedded LCM subscriptions in the SLES4SAP PAYG offer.
+
+* What are the benefits?
+** Simplified purchasing (Cloud Spend on CSP)
+** Pay only for what you use
+** No subscription required
+** Variable Monthly billing – based on peak usage
+** EDP (Enterprise Discount Plan) / Committed Spend / MACC
+** Automatic Subscription compliance
+** Easier setup
+
+* Sounds too good - What to be aware of?
+** Billing starts from when the first managed client is on-boarded.
+** To stop billing, delete clients from SUSE Manager or shutdown SUSE Manager instance
+** No ‘Migration’ from BYOS SUSE Manager to PAYG version, you need to Redeploy, re-onboard clients
+** If you want to manage BYOS clients with SUMa PAYG you need to buy the BYOS subscriptions and set them up in SCC.
+
+* Where to find documentation?
+** In the normal SUMa documentation at https://documentation.suse.com/suma/4.3/
+** For support have a look at https://documentation.suse.com/suma/4.3/en/suse-manager/specialized-guides/public-cloud-guide/payg-support.html
+
+* Is there a FAQ?
+** YES, look at https://documentation.suse.com/suma/4.3/en/suse-manager/specialized-guides/public-cloud-guide/public-cloud-faq.html
+
+
+### SUMa BYOS
+* When to use it?
+** If you used SUMa within the CSPs in the past
+
+* Where to get it?
+** directly from the Amazon, Azure and Google Marketplace.
+
+* Do i need subscriptions?
+** Yes, you need subscriptions for the SUMa Server itself and *need to buy LCM subscriptions for every managed client* (min. 10) from SUSE or a SUSE distributor.
+
+* Who does the support?
+** As it is a SUSE offering - SUSE will provide L1-L3 support
+
+* How do i get support?
+** Login and open your support ticket via your SCC account.
+
+### Support
+
+ The SUSE Manager is supported directly by the worldwide SUSE Global Technical Support team or your assigned Premium Support Engineer.
+ This is true whether the SUMA subscription is purchased directly from SUSE or the Azure Marketplace.
+
+  Please ensure your SUMA product is registered to your SUSE Customer Center ( SCC ) organization ( SCC.SUSE.COM). Once logged in to the SCC, use the "Support" option under "My Tools" on the homepage to open a support case with SUSE. If you have any questions, a FAQ and a User Guide are available under the "Help" link on the landing page.
+But simpler would be use the SUMa PAYG version if possible.
+
+* Where to find documentation?
+** In the normal SUMa documentation at https://documentation.suse.com/suma/4.3/
