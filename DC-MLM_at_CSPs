@@ -1,8 +1,8 @@
 # Comment out to deactivate draft mode when completed
-DRAFT=yes
+#DRAFT=yes
 
 # Main Document
-MAIN="SUMa_at_CSPs.adoc"
+MAIN="MLM_at_CSPs.adoc"
 
 # Turn on postprocessing
 #ADOC_POST="yes"
